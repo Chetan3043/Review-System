@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="form-box">
+      <h2>Write a Review</h2>
+
+      <form id="reviewForm">
+        <div class="input-group">
+          <label>Username</label>
+          <input type="text" id="username" required />
+        </div>
+
+        <div class="input-group">
+          <label>Comment</label>
+          <textarea id="comment" required></textarea>
+        </div>
+
+        <div class="input-group">
+          <label>Rating (1–5)</label>
+          <input type="number" id="rating" min="1" max="5" required />
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="reviews-box">
+      <h2>User Reviews</h2>
+      <div id="reviews"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
